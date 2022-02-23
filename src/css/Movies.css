@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bebas+Neue&family=Comforter&family=Dongle&family=EB+Garamond:wght@500&family=Estonia&family=Josefin+Sans:ital@1&family=Lobster&family=Merriweather:wght@900&family=Mochiy+Pop+One&family=Open+Sans:wght@700&family=Shippori+Antique+B1&display=swap");
+
+.image-item {
+  /* width: 100%; */
+  padding: 3px;
+}
+
+.image-item > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card {
+  background-color: #343a45;
+  color: rgb(220, 228, 233);
+}
+
+.card:hover {
+  background-color: whitesmoke;
+  color: #343a40;
+}
+
+.card-title {
+  font-size: 18px;
+  text-align: center;
+  padding: 6px;
+  position: relative;
+  top: 1%;
+}
+
+.popular-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-family: "EB Garamond", serif;
+  font-size: 2.4rem;
+  margin-bottom: 2%;
+  color: whitesmoke;
+  user-select: none;
+}
+
+.trending {
+  margin-top: 100px;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-media {
+  text-transform: capitalize;
+}
+
+@media (max-width: 1000px) {
+  .card-title {
+    font-size: 15px;
+  }
+
+  .popular-title {
+    font-size: 30px;
+  }
+  .image-container-tr {
+    display: grid;
+    grid-template-columns: repeat(4, 23%);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 2%;
+    row-gap: 15px;
+  }
+  .card-details > span {
+    font-size : 14px;
+  }
+}
+@media (max-width: 800px) {
+  .card-title {
+    font-size: 14px;
+  }
+  .popular-title {
+    font-size: 26px;
+  }
+  .card-details > span {
+    font-size: 12px;
+  }
+  .image-container-tr {
+    display: grid;
+    grid-template-columns: repeat(3, 31.5%);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.8%;
+    row-gap: 15px;
+  }
+}
+@media (max-width: 400px) {
+  .card-title {
+    font-size: 12px;
+  }
+  .trending {
+    margin-top: 24%;
+  }
+  .card-details > span {
+    font-size : 9px;
+  }
+  .image-container-tr {
+    display: grid;
+    grid-template-columns: repeat(3, 31.5%);
+    grid-template-rows: repeat(4, 1fr);
+    column-gap: 1.8%;
+    row-gap: 15px;
+  }
+}

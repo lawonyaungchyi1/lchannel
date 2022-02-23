@@ -1,0 +1,12 @@
+.active , .active:focus , .active:hover{
+    border: none;
+    color: rgb(59, 59, 27);
+   box-shadow : 0 0 7px 4px rgb(238, 238, 96);
+   z-index: 2;
+   border-radius: 4px;
+}
+
+.pagination-container {
+    display : flex;
+    justify-content: center;
+}

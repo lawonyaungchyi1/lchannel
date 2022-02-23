@@ -1,0 +1,147 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #343a40;
+  z-index: 100;
+}
+
+.bi-list {
+  cursor: pointer;
+  display: none;
+}
+
+.nav-link {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.list-container {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+
+.trendingIcon,
+.homeIcon,
+.moviesIcon,
+.searchIcon {
+  display: inline-block;
+  width: 100px;
+  font-size: 20px;
+  border-top: none;
+  border-radius: 10px;
+  margin: 1rem;
+  text-align: center;
+}
+
+.nav-link {
+  padding: 0px;
+  border-bottom: 1px solid rgb(12, 51, 99);
+  box-shadow: 2px 2px 1px 2px rgb(12, 51, 99);
+  border-radius: 4px;
+}
+
+.nav-item {
+  position: relative;
+  right: 20px;
+}
+
+.nav-link {
+  margin: 2px;
+}
+
+#nav-icon {
+  box-shadow: 0px 0px 10px 3px rgb(12, 51, 99);
+  border-radius: 4px;
+  color: rgb(157, 154, 154);
+}
+
+.menu-container {
+  display: none;
+}
+
+#dropdownMenuLink {
+  text-align: center;
+}
+.navbar-brand {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.navbar-brand > h1 {
+  font-family: "Estonia", cursive;
+  text-align: center;
+  color: grey;
+  font-size: 3rem;
+  color: #2269b0;
+}
+.navbar-brand > span:hover {
+  color: grey;
+  box-shadow: 4px 6px 8px rgb(198, 183, 183);
+  border-radius: 20px;
+  padding: 1rem;
+}
+
+.sub {
+  font-family: "Shippori Antique B1", sans-serif;
+  text-shadow: 2px 2px 6px rgb(12, 51, 99);
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.movie-icon {
+  animation: rotate 5s ease-in infinite;
+  display: inline-block;
+  font-size: 1.4rem;
+}
+
+.l-channel {
+  font-family: "Comforter", cursive;
+  font-size: 2rem;
+}
+.responsive-container {
+  display: none;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (max-width: 1000px) {
+  .list-container {
+    display: none;
+  }
+  .bi-list {
+    display: inline-block;
+    position: absolute;
+    right: 5%;
+  }
+  .responsive-container {
+    padding: 20px;
+    display: inline-block;
+    position: absolute;
+    width: 50%;
+    top: 70%;
+    right: 5%;
+    background-color: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+  }
+  .nav-link {
+    width: 150px;
+  }
+}

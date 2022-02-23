@@ -1,0 +1,28 @@
+.active {
+    /* width: 100%; */
+}
+
+.trendingIcon {
+    color: rgb(164, 48, 48);
+}
+
+.trending-link:hover .trendingIcon , .home-link:hover .homeIcon , .movies-link:hover .moviesIcon , .search-link:hover .searchIcon {
+    font-size : 1.5rem;
+}
+
+.homeIcon {
+    color: pink;
+}
+
+@media (max-width: 1000px) {
+    .nav-item {
+        position: relative;
+        text-align: center;
+        left : 3%;
+    }
+    .nav-link {
+    }
+    .navbar-nav {
+        position: relative;
+    }
+}

@@ -1,0 +1,126 @@
+.slider-container {
+  margin-top: 90px;
+}
+
+.item-image {
+  width: 165px;
+  margin-left: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.slider {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 6px 8px rgb(12, 51, 99);
+}
+
+.title-popular {
+  color: whitesmoke;
+  user-select: none;
+  font-size: 1.8rem;
+  padding: 10px 0 0 10px;
+  color: rgb(51, 109, 179);
+  font-family: 'Bebas Neue', cursive;
+  text-shadow: 2px 2px 3px rgb(12, 51, 99);
+}
+
+.slider-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-all {
+  margin-top: .5%;
+  margin-right: 2%;
+  text-decoration: none;
+  color: rgb(75, 130, 198);
+}
+
+.see-all:hover {
+  color: rgb(209, 195, 195);
+}
+
+.creator-section {
+  height: 100px;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  margin-top: 8px;
+}
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200, 20%, 95%);
+  }
+}
+
+@media (max-width: 1500px) {
+  .item-image {
+    width: 156px;
+  }
+}
+@media (max-width: 1450px) {
+  .item-image {
+    width: 153px;
+  }
+}
+@media (max-width: 1400px) {
+  .item-image {
+    width: 139px;
+  }
+}
+@media (max-width: 1400px) {
+  .item-image {
+    width: 139px;
+  }
+}
+@media (max-width: 1300px) {
+  .item-image {
+    width: 128px;
+  }
+}
+@media (max-width: 1200px) {
+  .item-image {
+    width: 122px;
+  }
+}
+@media (max-width: 1000px) {
+  .item-image {
+    width: 78px;
+  }
+  .creator-section {
+    font-size: 16px;
+    height: 19%;
+    padding: 10px;
+  }
+}
+@media (max-width: 470px) {
+  .item-image {
+    width: 74px;
+  }
+}
+@media (max-width: 440px) {
+  .item-image {
+    width: 96px;
+  }
+}
+@media (max-width: 420px) {
+  .item-image {
+    width: 75%;
+  }
+}
